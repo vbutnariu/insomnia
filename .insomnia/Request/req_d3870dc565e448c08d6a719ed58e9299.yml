@@ -1,0 +1,98 @@
+_id: req_d3870dc565e448c08d6a719ed58e9299
+type: Request
+parentId: fld_2248272895124a2c89db448e8e4c2c6d
+modified: 1694089951317
+created: 1694089951317
+url: "{{ _.base_url }}/api/v1/print"
+name: Test print  preview data source
+description: "Sample Request:\r
+
+  \r
+
+  {\r
+
+  \   Either:\r
+
+  \   \r
+
+  \   \"LibraryID\": \"e79865ac-2fb1-41c7-afcf-996152f0a850\",\r
+
+  \   \"Relativepath\": \"Automotive/AIAG/B-10/BMW.btw\",\r
+
+  \   \r
+
+  \   or:\r
+
+  \   \r
+
+  \   \"AbsolutePath\":
+  \"c:\\\\\\\\inetpub\\\\\\\\wwwroot\\\\\\\\BarTender\\\\\\\\wwwroot\\\\\\\\Tem\
+  plates\\\\\\\\Automotive\\\\\\\\AIAG\\\\\\\\B-10\\\\\\\\BMW.btw\"\r
+
+  \r
+
+  \   \"DocumentPassword: \"MyPassword\",\r
+
+  \   \"PrintRequestID\": \"fe80480e-1f94-4A2f-8947-e492800623aa\",  \r
+
+  \   \"Printer\": \"foo\",\r
+
+  \   \"StartingPosition\": 2,\r
+
+  \   \"Copies\": 3,\r
+
+  \   \"SerialNumbers\": 4,\r
+
+  \   \"NamedDataSources\": {\r
+
+  \      \"NamedDataSource1\" : \"My Value\",\r
+
+  \      \"NamedDataSource2\" : \"My Other Value\"\r
+
+  \   },\r
+
+  \   \"DataEntryControls\": {\r
+
+  \      \"Edit Control 1\": \"XX\",\r
+
+  \      \"Edit Control 2\": \"XX\"\r
+
+  \   }\r
+
+  }"
+method: POST
+body:
+  mimeType: application/json-patch+json
+  text: |-
+    {
+      "libraryID": "6763aef6-4b32-4dbd-acd4-fcbd36b71c81",
+      "relativePath": "Product.btw",
+      "printRequestID": "8faab6ae-3111-4c7f-9062-4da3561c6222",
+      "printer": "PDF",
+      "startingPosition": 0,
+      "copies": 2,
+      "serialNumbers": 0,
+      "namedDataSources": {
+    		"PZN8" : "99978",
+    		"ProductName" : "Aspirin Vitamin C"
+    	}
+    	
+    }
+parameters:
+  - id: pair_c0040cad0c6e40998ae651c326d0e903
+    name: ""
+    value: ""
+    description: ""
+headers:
+  - name: Content-Type
+    disabled: false
+    value: application/json-patch+json
+authentication: {}
+metaSortKey: -1693918230466
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,15 @@
+_id: fld_8b514b04d22045718f5141975a7be4e9
+type: RequestGroup
+parentId: wrk_afd3acad852344e29110f67c375e30ac
+modified: 1693941087367
+created: 1693918230615
+name: Library
+description: ""
+environment:
+  id: 7faab6ae-3111-4c7f-9062-4da3561c6226
+  ffff: ffffffff
+environmentPropertyOrder:
+  "&":
+    - id
+    - ffff
+metaSortKey: -1693918230615

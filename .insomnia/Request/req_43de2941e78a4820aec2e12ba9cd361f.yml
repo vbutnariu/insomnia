@@ -1,0 +1,26 @@
+_id: req_43de2941e78a4820aec2e12ba9cd361f
+type: Request
+parentId: fld_a152d17e15dd46588023c09a56739b4d
+modified: 1693920176585
+created: 1693918230618
+url: "{{ _.base_url }}/api/v1/printers"
+name: Returns the available printers.
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: basic
+  useISO88591: false
+  disabled: false
+  username: user
+  password: user
+metaSortKey: -1693918230618
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,48 @@
+_id: req_375ac04150c741beb4bec4bf26e561f3
+type: Request
+parentId: fld_4fb885be24ac4eb49c870561f74130f0
+modified: 1693918230616
+created: 1693918230616
+url: "{{ _.base_url }}/api/v1/Authenticate"
+name: Authenticate with your username and password for future requests.
+description: "Sample Request:\r
+
+  \r
+
+  {\r
+
+  \  \"UserName\": \"domain\\\\username\",\r
+
+  \  \"Password\": \"yourpassword\"\r
+
+  }\r
+
+  \r
+
+  If this request is successful, a token is returned. Make all future
+  authenticated API requests by using an Authorization HTTP header that has the
+  following format:\r
+
+  Bearer TheTokenValue"
+method: POST
+body:
+  mimeType: application/json-patch+json
+  text: |-
+    {
+      "userName": "string",
+      "password": "string"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    disabled: false
+    value: application/json-patch+json
+authentication: {}
+metaSortKey: -1693918230616
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

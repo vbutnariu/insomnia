@@ -1,0 +1,116 @@
+_id: req_f862a9f1c0034ed6b257399745e0bffb
+type: Request
+parentId: fld_2248272895124a2c89db448e8e4c2c6d
+modified: 1694009140373
+created: 1694006456494
+url: "{{ _.base_url }}/api/v1/print"
+name: Test print  with values
+description: "Sample Request:\r
+
+  \r
+
+  {\r
+
+  \   Either:\r
+
+  \   \r
+
+  \   \"LibraryID\": \"e79865ac-2fb1-41c7-afcf-996152f0a850\",\r
+
+  \   \"Relativepath\": \"Automotive/AIAG/B-10/BMW.btw\",\r
+
+  \   \r
+
+  \   or:\r
+
+  \   \r
+
+  \   \"AbsolutePath\":
+  \"c:\\\\\\\\inetpub\\\\\\\\wwwroot\\\\\\\\BarTender\\\\\\\\wwwroot\\\\\\\\Tem\
+  plates\\\\\\\\Automotive\\\\\\\\AIAG\\\\\\\\B-10\\\\\\\\BMW.btw\"\r
+
+  \r
+
+  \   \"DocumentPassword: \"MyPassword\",\r
+
+  \   \"PrintRequestID\": \"fe80480e-1f94-4A2f-8947-e492800623aa\",  \r
+
+  \   \"Printer\": \"foo\",\r
+
+  \   \"StartingPosition\": 2,\r
+
+  \   \"Copies\": 3,\r
+
+  \   \"SerialNumbers\": 4,\r
+
+  \   \"NamedDataSources\": {\r
+
+  \      \"NamedDataSource1\" : \"My Value\",\r
+
+  \      \"NamedDataSource2\" : \"My Other Value\"\r
+
+  \   },\r
+
+  \   \"DataEntryControls\": {\r
+
+  \      \"Edit Control 1\": \"XX\",\r
+
+  \      \"Edit Control 2\": \"XX\"\r
+
+  \   }\r
+
+  }"
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "libraryID": "6763aef6-4b32-4dbd-acd4-fcbd36b71c81",
+      "relativePath": "UPS_Domestic.btw",
+
+      "printRequestID": "7faab6ae-3111-4c7f-9062-4da3561c6224",
+      "printer": "PDF",
+      "startingPosition": 0,
+      "copies": 0,
+      "serialNumbers": 0,
+      "namedDataSources": {},
+    	"dataEntryControls": {
+    		"Dropdown List 1": "01",
+    		"Radio Button List 2": "N",
+    		"Radio Button List 3": "HAZARDOUS MATERIAL",
+    		"Text Input Box 18": "Z",
+    		"Text Input Box 16": "12",
+    		"Radio Button List 1": "VCD",
+    		"Text Input Box 15": "2",
+    		"Text Input Box 14": "1",
+    		"Text Input Box 13": "2075486",
+    		"Text Input Box 5": "",
+    		"Text Input Box 12": "001",
+    		"Text Input Box 9": "841706672",
+    		"Text Input Box 8": "UT",
+    		"Text Input Box 7": "SALT LAKE CITY 1",
+    		"Text Input Box 6": "123 MAIN STREET",
+    		"Text Input Box 4": "ABC COMPANY",
+    		"Text Input Box 3": "9876543210",
+    		"Text Input Box 2": "BUILDING 3 FLOOR 4",
+    		"Text Input Box 1": "JOHN SMITH",
+    		"Text Input Box 11": "840",
+    		"Time Picker 1": "2023-09-06 14:35:00Z",
+    		"Text Input Box 10": "",
+    		"Text Input Box 20": "123X56"
+    	}
+      
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1693918230553.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

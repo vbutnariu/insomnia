@@ -1,0 +1,93 @@
+_id: req_618bac22a2a445518ac51eee5d88f8a1
+type: Request
+parentId: fld_2248272895124a2c89db448e8e4c2c6d
+modified: 1694091756201
+created: 1694006116022
+url: "{{ _.base_url }}/api/v1/print"
+name: Test print  Zebra
+description: "Sample Request:\r
+
+  \r
+
+  {\r
+
+  \   Either:\r
+
+  \   \r
+
+  \   \"LibraryID\": \"e79865ac-2fb1-41c7-afcf-996152f0a850\",\r
+
+  \   \"Relativepath\": \"Automotive/AIAG/B-10/BMW.btw\",\r
+
+  \   \r
+
+  \   or:\r
+
+  \   \r
+
+  \   \"AbsolutePath\":
+  \"c:\\\\\\\\inetpub\\\\\\\\wwwroot\\\\\\\\BarTender\\\\\\\\wwwroot\\\\\\\\Tem\
+  plates\\\\\\\\Automotive\\\\\\\\AIAG\\\\\\\\B-10\\\\\\\\BMW.btw\"\r
+
+  \r
+
+  \   \"DocumentPassword: \"MyPassword\",\r
+
+  \   \"PrintRequestID\": \"fe80480e-1f94-4A2f-8947-e492800623aa\",  \r
+
+  \   \"Printer\": \"foo\",\r
+
+  \   \"StartingPosition\": 2,\r
+
+  \   \"Copies\": 3,\r
+
+  \   \"SerialNumbers\": 4,\r
+
+  \   \"NamedDataSources\": {\r
+
+  \      \"NamedDataSource1\" : \"My Value\",\r
+
+  \      \"NamedDataSource2\" : \"My Other Value\"\r
+
+  \   },\r
+
+  \   \"DataEntryControls\": {\r
+
+  \      \"Edit Control 1\": \"XX\",\r
+
+  \      \"Edit Control 2\": \"XX\"\r
+
+  \   }\r
+
+  }"
+method: POST
+body:
+  mimeType: application/json-patch+json
+  text: |-
+    {
+      "libraryID": "6763aef6-4b32-4dbd-acd4-fcbd36b71c81",
+      "relativePath": "UPS_Domestic.btw",
+
+      "printRequestID": "7faab6ae-3111-4c7f-9062-4da3561c6224",
+      "printer": "ZDesigner ZD421-203dpi ZPL",
+      "startingPosition": 0,
+      "copies": 0,
+      "serialNumbers": 0,
+      "namedDataSources": { "TEST" :"xxx"}
+    	
+      
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    disabled: false
+    value: application/json-patch+json
+authentication: {}
+metaSortKey: -1693918230541
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
